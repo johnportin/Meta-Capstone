@@ -1,3 +1,4 @@
+import "./Nav.css";
 import Logo from "./images/Logo.svg";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
@@ -14,7 +15,7 @@ function Nav() {
                 <li>
                     <Link to="/about">About</Link>
                 </li>
-                {/* <li>
+                <li>
                     <Link to="/Menu">Menu</Link>
                 </li>
                 <li>
@@ -25,7 +26,7 @@ function Nav() {
                 </li>
                 <li>
                     <Link to="login">Login</Link>
-                </li> */}
+                </li>
             </ul>
         </nav>
         </Router>

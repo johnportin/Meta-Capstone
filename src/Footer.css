@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer img {
+    position: relative;
+}

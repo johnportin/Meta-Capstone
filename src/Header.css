@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #495e57;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+}
+
