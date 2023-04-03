@@ -3,6 +3,8 @@ nav {
     display: flex;
     flex-direction: row;
     margin: 0 auto 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 nav img {
@@ -15,6 +17,14 @@ nav ul {
     flex-direction: row;
     list-style: none;
     margin: auto;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    padding: 1rem;    
 }

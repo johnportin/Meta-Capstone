@@ -8,3 +8,12 @@ footer {
 footer img {
     position: relative;
 }
+
+footer li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+}

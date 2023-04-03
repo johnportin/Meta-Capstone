@@ -1,6 +1,7 @@
 .card {
     background-color: #D9D9D9;
     border-radius: 16px 16px 0 0; 
+    width: 250px;
 }
 
 .card-image {
@@ -19,4 +20,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-name {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.card-description {
+    color: #495E57;
+}
+
+.card-price {
+    color: #EE9972;
 }
