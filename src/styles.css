@@ -19,5 +19,8 @@ h3, h4, h5, h6, p, li, a, button, nav {
 
 button {
     background-color: #F4CE14;
+    max-width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 

@@ -1,0 +1,36 @@
+
+.rating {
+    grid-area: stars;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* padding-left: 1rem; */
+}
+
+.image {
+    grid-area: picture;
+    border: 1px solid black;
+    height: "50px";
+    width: "50px";
+}
+
+.reviewer {
+    grid-area: name;
+}
+
+.review {
+    grid-area: text;
+}
+
+.review-card {
+    display: grid;
+    grid-template-areas: 
+        "stars stars"
+        "picture name"
+        "text text";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    border: 2px solid #ccc;
+    gap: 1rem;
+    padding: 1rem;
+}
