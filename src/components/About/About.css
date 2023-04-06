@@ -17,8 +17,7 @@
     display: block;
     position: relative;
     width: 400px;
-    border: 1px solid black;
-    height: 80%;
+    height: 500px;
 }
 
 .about-image {
@@ -26,15 +25,21 @@
     width: 60%;
 }
 
+.about-image img {
+    object-fit: cover;
+    max-height:fit-content;
+    height: 100%;
+    width: 100%;
+}
+
 .image1 {
-    background-color: orange;
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 1;
 }
 
 .image2 {
-    background-color: blue;
     position: absolute;
     top: 0;
     right: 0;
@@ -51,7 +56,6 @@
     }
 
     .about-text-container {
-        /* justify-content: center; */
         width: 100%;
         margin: 0;
     }
@@ -62,22 +66,5 @@
         width: 400px;
         border: 1px solid black;
         height: 500px;
-    }
-
-    .about-image {
-        height: 60%;
-        width: 60%;
-    }
-
-    .image1 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    .image2 {
-        position: absolute;
-        top: 0;
-        right: 0;
     }
 }

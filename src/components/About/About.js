@@ -1,4 +1,6 @@
 import "./About.css"
+import pic1 from "../../images/MarioAdrian1.jpg";
+import pic2 from "../../images/MarioAdrian2.jpg";
 
 const About = () => {
     return (
@@ -17,10 +19,10 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
             </div>
             <div className="about-image-container">
                 <div className="about-image image1">
-
+                    <img src={pic2} />
                 </div>
                 <div className="about-image image2">
-
+                    <img src={pic1} />
                 </div>
 
             </div>
