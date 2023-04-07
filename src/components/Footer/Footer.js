@@ -1,11 +1,14 @@
 import "./Footer.css";
 import "../../styles.css";
 import Logo from "../../images/Logo.svg";
+import SmallLogo from "../../images/llSmall.jpg";
+
 
 function Footer() {
     return (
         <footer className="footer-container">
-            <img src={ Logo } alt="Logo" />
+            <img id="logo-footer-large" src={ Logo } alt="Logo" />
+            <img id="logo-footer-small" src={ SmallLogo } alt="Logo" />
             <section>
                 <h3>Contact</h3>
                 <ul className="footer-ul">

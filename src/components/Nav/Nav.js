@@ -1,12 +1,14 @@
 import "./Nav.css";
 import "../../styles.css";
 import Logo from "../../images/Logo.svg";
+import SmallLogo from "../../images/llSmall.jpg";
 import { Link } from "react-router-dom";
 
 function Nav() {
     return (
         <nav>
-            <img src={ Logo } alt="Logo" />
+            <img id="logo-top-full" src={ Logo } alt="Logo" />
+            <img id="logo-top-small" src={ SmallLogo } alt="Logo" />
             <ul>
                 <li>
                     <Link className="link" to="/">Home</Link>
