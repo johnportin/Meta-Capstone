@@ -4,28 +4,19 @@ import Logo from "../../images/Logo.svg";
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer-container">
             <img src={ Logo } alt="Logo" />
             <section>
-                <h4>
-                    Doormat Navigation
-                </h4>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
+                <h3>Contact</h3>
+                <ul className="footer-ul">
+                    <li>1234 Blanket Place Dr.</li>
+                    <li>Phone: (222) 123-4567</li>
+                    <li>Email: ll@yahoo.com</li>
                 </ul>
             </section>
             <section>
-                <h4>Contact</h4>
-                <ul>
-                    <li>Address</li>
-                    <li>Phone</li>
-                    <li>Email</li>
-                </ul>
-            </section>
-            <section>
-                <h4>Social Media</h4>
-                <ul>
+                <h3>Social Media</h3>
+                <ul className="footer-ul">
                     <li>Facebook</li>
                     <li>Instagram</li>
                     <li>Twitter</li>

@@ -3,17 +3,24 @@ footer {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    padding-bottom: 2rem;
+    margin-top: 0;
 }
 
 footer img {
     position: relative;
 }
 
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
 footer li {
-    list-style-type: none;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: left;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
