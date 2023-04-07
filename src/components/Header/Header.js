@@ -21,10 +21,12 @@ function Header() {
             <section>
                 <h1 className="title">Little Lemon</h1>
                 <h2  className="subtitle">Chicago</h2>
-                <p className="title-text">{ lorem.generateSentences(3) }</p>
-                <button><Link to="/booking">Reserve a Table</Link></button>
+                <p className="title-text">{ lorem.generateSentences(5) }</p>
+                <button><Link className="button-text" to="/booking">Reserve a Table</Link></button>
             </section>
-            <img src={ RestaurantFood } alt="Restaurant Food" width="200px" />
+            <div className="title-image-container">
+                <img className="title-image" src={ RestaurantFood } alt="Restaurant Food" />
+            </div>
         </header>
     )
 }

@@ -1,12 +1,12 @@
 h1.title {
     font-family: 'Markazi Text', serif;
-    font-size: 2rem;
+    font-size: 60pt;
     color: #F4CE14;
 }
 
 h2.subtitle {
     font-family: 'Markazi Text', serif;
-    font-size: 1.5rem;
+    font-size: 40pt;
 }
 
 p.title-text {
@@ -17,10 +17,42 @@ h3, h4, h5, h6, p, li, a, button, nav {
     font-family: 'Karla', sans-serif;
 }
 
-button {
+.button-text {
+    display: flex;
     background-color: #F4CE14;
-    max-width: 100px;
+    /* max-width: 100px; */
     font-weight: bold;
-    border-radius: 5px;
+    /* border-radius: 16%; */
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border-radius: 16pt;
+    padding: 8pt;
+    max-width: fit-content;
+    border: none;
+}
+
+.card-title {
+    font-family: 'Karla', sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.call-to-action {
+    font-size: 18pt;
+    font-weight: medium;
+    /* border-top: 1px solid #495E57; */
+}
+
+nav .link {
+    font-size: 18pt;
+    font-weight: medium;
+    /* color: #495E57; */
+}
+
+nav .link:hover {
+    color: #EDEFEE;
 }
 

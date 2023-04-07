@@ -1,4 +1,5 @@
 import "./About.css"
+import "../../styles.css"
 import pic1 from "../../images/MarioAdrian1.jpg";
 import pic2 from "../../images/MarioAdrian2.jpg";
 
@@ -7,11 +8,11 @@ const About = () => {
         <div className="about-container">
             <div className="about-text-container">
                 <div className="about-title-container">
-                    <h1>LittleLemon</h1>
-                    <h2>Chicago</h2>
+                    <h1 className="title about-title">Little Lemon</h1>
+                    <h2 className="subtitle about-subtitle">Chicago</h2>
                 </div>
                 <div className="about-description-container">
-                    <p>
+                    <p className="about-content">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
                     </p>

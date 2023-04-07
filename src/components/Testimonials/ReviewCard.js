@@ -1,19 +1,20 @@
 import "./ReviewCard.css"
+import "../../styles.css"
 
-const ReviewCard = (props) => {
+const ReviewCard = ({ rating, name, image, content }) => {
     return (
         <div className="review-card">
             <div className="rating">
-                * * * *
+                {rating}
             </div>
-            <div className="image" >
-                <img alt="reviewer" />
+            <div className="image-container" >
+                <img src={image} alt="reviewer" />
             </div>
             <div className="reviewer">
-                <p>John Doe</p>
+                <p>{ name }</p>
             </div>
             <div className="review">
-                <p>Worst food in Chicago! Fucking trash. I had better food from the gutters of Philly!</p>
+                <p>{ content }</p>
             </div>
         </div>
     )

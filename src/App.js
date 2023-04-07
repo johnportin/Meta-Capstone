@@ -6,8 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home.js';
 import { Booking } from './pages/Booking.js';
 
-
-
 function App() {
   return (
     <>
