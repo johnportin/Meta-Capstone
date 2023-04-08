@@ -9,15 +9,25 @@
 
 .booking-description {
     max-width: 50%;
+    margin-right: 3rem;
+    height: 100%;
 }
 
 .booking-title {
     font-family: 'Karla', sans-serif;
     font-size: 40pt;
+    margin-top: 0;
+}
+
+.booking-description {
+    font-family: 'Karla', sans-serif;
+    font-size: 18pt;
 }
 
 @media screen and (width <= 768px) {
     .booking-container {
         flex-direction: column;
     }
+
+    
 }

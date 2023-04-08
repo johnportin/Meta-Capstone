@@ -15,8 +15,7 @@ const BookingForm = (props) => {
         // console.log(date, time, guests, occasion);
         event.preventDefault();
         const success = handleSubmit(date, time, guests, occasion);
-        console.log(success)
-        success ? navigate("/booking-confirmation") : alert("Something went wrong. Please try again.");
+        success ? navigate("/booking-confirmation", {state: {name: name, time: time, date: date, guests: guests, occasion: occasion  }}) : alert("Please fill the form out correctly.");
     }
 
     let isDisabled = name.length > 0 && date.length > 0 && time.length > 0 && guests.length > 0 && occasion.length > 0 ? false : true;
@@ -32,7 +31,7 @@ const BookingForm = (props) => {
                 setAvailableTimes({type: 'update', payload: date});
                 }} />
             <label htmlFor="res-time">Choose time</label>
-            <select id="res-time " data-testid="res-time" onChange={(e) => {setAvailableTimes(e.target.value)}} >
+            <select id="res-time " data-testid="res-time" onChange={(e) => {setTime(e.target.value); setAvailableTimes(e.target.value)}} >
                 {
                     availableTimes ? availableTimes.map((time) => {
                         return <option className="booking-option" key={time} value={time}>{time}</option>

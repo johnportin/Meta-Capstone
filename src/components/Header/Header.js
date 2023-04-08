@@ -17,7 +17,7 @@ const lorem = new LoremIpsum({
 
 function Header() {
     return (
-        <header>
+        <header className="header-container">
             <section>
                 <h1 className="title">Little Lemon</h1>
                 <h2  className="subtitle">Chicago</h2>

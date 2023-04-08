@@ -1,22 +1,22 @@
-main {
+section {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     width: 100%;
 }
 
-main .main-header {
+section .main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-bottom: 50px;
 }
 
-main .card-container {
+section .card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,9 +26,28 @@ main .card-container {
 }
 
 @media screen and (width <= 500px) {
-    main .card-container {
+
+    .specials-container {
+        display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    section .card-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         gap: 2rem;
+    }
+
+    section .main-header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-button {
+        display: none;
     }
 }

@@ -1,5 +1,5 @@
 
-header {
+.header-container {
     display: flex;
     flex-direction: row;
     background-color: #495e57;
@@ -8,7 +8,7 @@ header {
     justify-content: center;
 }
 
-header section {
+.header-container section {
     display: flex;
     flex-direction: column;
     margin-left: 10%;
@@ -16,7 +16,7 @@ header section {
     width: 60%;
 }
 
-header .title-image-container {
+.header-container .title-image-container {
     max-height: 500px;
     width: auto;
     overflow: hidden;
@@ -25,21 +25,21 @@ header .title-image-container {
     transform: translateY(20%);
 }
 
-header .title-image {
+.header-container .title-image {
     max-height: 500px;
 }
 
-header .title {
+.header-container .title {
     /* font-size: 60pt; */
     margin-bottom: 0;
 }
 
-header .subtitle {
+.header-container .subtitle {
     /* font-size: 40pt; */
     margin-top: 0;
 }
 
-header .title-text {
+.header-container .title-text {
     font-size: 16pt;
     line-height: 1.5;
     /* font-weight: regular; */
@@ -48,25 +48,25 @@ header .title-text {
 }
 
 @media screen and (width <= 768px) {
-    header {
+    .header-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 100%;
         justify-content: center;
         /* background-color: #495e57;
         width: 100%;
         padding-bottom: 5%; */
     }
 
-    header section {
+    .header-container section {
         display: flex;
         flex-direction: column;
         margin-left: 10%;
         padding-right: 3rem;
     }
 
-    header img {
+    .header-container img {
         display: none;
         margin-right: 10%;
         transform: translateY(30px);

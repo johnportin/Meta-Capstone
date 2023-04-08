@@ -59,6 +59,7 @@
     .review-card {
         width: auto;
         height: auto;
+        margin: 0 2rem;
         /* background-color: green; */
     }
 }
