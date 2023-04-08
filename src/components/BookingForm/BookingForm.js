@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import "./BookingForm.css";
 
 const BookingForm = (props) => {
@@ -6,18 +7,22 @@ const BookingForm = (props) => {
     const [time, setTime] = useState("12:00");
     const [guests, setGuests] = useState("1");
     const [occasion, setOccasion] = useState("Birthday");
-    const { availableTimes, setAvailableTimes } = {...props};
+    const { availableTimes, setAvailableTimes, handleSubmit } = {...props};
+    const navigate = useNavigate();
 
     const onSubmit = event => {
-        console.log(date, time, guests, occasion);
+        // console.log(date, time, guests, occasion);
         event.preventDefault();
+        const success = handleSubmit(date, time, guests, occasion);
+        console.log(success)
+        success ? navigate("/booking-confirmation") : alert("Something went wrong. Please try again.");
     }
 
 
     return (
         <form style={{ display: "grid", maxWidth: "200px", gap: "20px"}} onSubmit={onSubmit}>
             <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" onChange={(e) => {setDate(e.target.value)}} />
+            <input type="date" id="res-date" onChange={(e) => {setDate(e.target.value); setAvailableTimes({type: 'update', payload: date})}} />
             <label htmlFor="res-time">Choose time</label>
             <select id="res-time " onChange={(e) => {setAvailableTimes(e.target.value)}} >
                 {
