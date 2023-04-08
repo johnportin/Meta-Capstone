@@ -47,8 +47,25 @@
     font-weight: medium;
 }
 
-.card-icon {
-    padding: 0 20px;
+.card-delivery {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px;
     margin-top: auto;
+    /* justify-content: space-between; */
+    justify-content: left;
+    align-items: center;
     /* margin-bottom: 0; */
+}
+
+.card-delivery:hover {
+    /* background-color: #EE9972; */
+    /* color: white; */
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    margin-left: 1rem;
 }

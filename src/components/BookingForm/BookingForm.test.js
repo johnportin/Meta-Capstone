@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, act } from "@testing-library/react";
 import { BookingForm } from './BookingForm';
 
 test("Renders BookingForm label 'Choose date'", () => {
@@ -7,18 +7,27 @@ test("Renders BookingForm label 'Choose date'", () => {
     expect(dateLabel).toBeInTheDocument();
 })
 
-// test("Correctly initializes the time options", () => {
-//     render(<BookingForm />);
-//     const timeOptions = screen.findAllByRole("option");
-//     expect(timeOptions).toBeInTheDocument();
-// })
+describe("Booking Form", () => {
+    test("BookingForm is disabled when isDisabled is true", async () => {
+        await act(async () => {
+            render(<BookingForm isDisabled={true} />);
+        })
+        const submitButton = screen.getByRole("button", { name: /make your reservation/i });
+        expect(submitButton).toBeDisabled();
+    })
+})
 
-test("Updates the time correctly", () => {
-    render(<BookingForm />);
-    const dateSelector = screen.getByLabelText(/choose date/i);
-    fireEvent.change(dateSelector, { target: { value: "2023-02-05" } });
-    const timeDropDown = screen.getByRole("select");
-    fireEvent.change(timeDropDown, { target: { value: "17:00" } });
-    expect(timeDropDown.value).toEqual("17:00");
-  });
+describe("Booking Form", () => {
+    test("BookingForm is enabled when isDisabled is true", async () => {
+        await act(async () => {
+            render(<BookingForm />);
+        })
+        const nameField = screen.getByPlaceholderText(/john doe/i);
+        fireEvent.change(nameField, { target: { value: "abc" } });
+        const submitButton = screen.getByRole("button", { name: /make your reservation/i });
+        expect(submitButton).toBeEnabled();
+    })
+})
+
+
   

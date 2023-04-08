@@ -46,13 +46,13 @@ const cardComponents = cards.map((card) => {
 function Specials() {
     return (
         <main>
-            <div className="main-header">
+            <section className="main-header">
                 <h2>This weeks specials!</h2>
                 <button>Online Menu</button>
-            </div>
-            <div className="card-container">
+            </section>
+            <section className="card-container">
                 { cardComponents }
-            </div>
+            </section>
         </main>
     )
 }

@@ -17,7 +17,7 @@ const lorem = new LoremIpsum({
 
 const Testimonials = () => {
     return (
-        <div className="testimonials-container">
+        <section className="testimonials-container">
             <h1 className="testimonials-title">Testimonials</h1>
             <div className="reviewCard-container">
                 <ReviewCard 
@@ -46,7 +46,7 @@ const Testimonials = () => {
                 />
 
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -6,13 +6,13 @@ import { Specials } from '../components/Specials/Specials.js';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <CallToAction />
             <Header />
             <Specials />
             <Testimonials />
             <About />
-        </div>
+        </>
     );
 }
 

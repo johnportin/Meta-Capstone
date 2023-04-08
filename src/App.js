@@ -8,9 +8,11 @@ import { Booking } from './pages/Booking.js';
 import { useReducer, useEffect } from 'react';
 import { fetchAPI, submitAPI } from "./fetchUtils.js"; 
 import { ConfirmedBooking } from './pages/ConfirmedBooking';
+import { useNavigate } from 'react-router-dom';
 
 
 function App() {
+  const navigate = useNavigate();
   const updateTimes = (state, action) => {
     switch (action.type) {
       case "initialize": {
@@ -46,15 +48,15 @@ function App() {
 
   return (
     <>
-    <Router>
+    {/* <Router> */}
       <Nav />
       <Routes>
         <Route path="/" element={<Home availableTimes={availableTimes} setAvailableTimes={setAvailableTimes}  />} />
-        <Route path="/booking" element={<Booking availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} handleSubmit={submitForm} />} />
+        <Route path="/booking" element={<Booking availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} handleSubmit={submitForm} navigate={navigate} />} />
         <Route path="/booking-confirmation" element={<ConfirmedBooking />} />
       </Routes>
       <Footer />
-    </Router>
+    {/* </Router> */}
     </>
   );
 }

@@ -4,7 +4,7 @@ import "../styles.css";
 
 const Booking = (props) => {
     return (
-        <div className="booking-container">
+        <section className="booking-container">
             <section className="booking-description">
                 <h2 className="booking-title">Book your table</h2>
                 <p>
@@ -12,7 +12,7 @@ const Booking = (props) => {
                 </p>
             </section>
             <BookingForm {...props}/>
-        </div>
+        </section>
     )
 }
 

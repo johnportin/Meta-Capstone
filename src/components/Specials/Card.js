@@ -1,4 +1,5 @@
 import "./Card.css";
+import { MdDeliveryDining } from "react-icons/md";
 
 function Card({ title, price, image, description }) {
     return (
@@ -13,7 +14,10 @@ function Card({ title, price, image, description }) {
                 </div>
                 <p className="card-description">{ description }</p>
             </div>
-            <h4 className="card-icon">Order a delivery oo</h4>
+            <span className="card-delivery" role="button" aria-label="On Click" onClick={() => {alert("Ordering Delivery")}}>
+                Order Delivery<MdDeliveryDining className="card-icon" />
+                </span>
+            {/* <h4 className="card-icon">Order a delivery oo</h4> */}
         </section>
     )
 }
