@@ -4,7 +4,7 @@ import { Card } from "./Card.js";
 import bruchettaImage from "../../images/bruchetta.svg";
 import greekSalad from "../../images/greekSalad.jpg";
 import lemonDessert from "../../images/lemonDessert.jpg";
-import { LoremIpsum, loremIpsum } from "lorem-ipsum";
+import { LoremIpsum } from "lorem-ipsum";
 
 const lorem = new LoremIpsum({
     sentencesPerParagraph: {

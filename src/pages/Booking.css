@@ -1,0 +1,23 @@
+.booking-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin: 0 10%; */
+}
+
+.booking-description {
+    max-width: 50%;
+}
+
+.booking-title {
+    font-family: 'Karla', sans-serif;
+    font-size: 40pt;
+}
+
+@media screen and (width <= 768px) {
+    .booking-container {
+        flex-direction: column;
+    }
+}

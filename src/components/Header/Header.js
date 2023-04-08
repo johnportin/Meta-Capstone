@@ -1,7 +1,7 @@
 import "./Header.css";
 import "../../styles.css";
 import RestaurantFood from "../../images/food.jpg";
-import { LoremIpsum, loremIpsum } from "lorem-ipsum";
+import { LoremIpsum } from "lorem-ipsum";
 import { Link } from "react-router-dom";
 
 const lorem = new LoremIpsum({
